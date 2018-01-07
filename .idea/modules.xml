@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Calorie_Counter.iml" filepath="$PROJECT_DIR$/Calorie_Counter.iml" />
-      <module fileurl="file://C:\Users\Qwert\AndroidStudioProjects\Calorie_Counter\Calorie_Counter.iml" filepath="C:\Users\Qwert\AndroidStudioProjects\Calorie_Counter\Calorie_Counter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Qwert\AndroidStudioProjects\Calorie_Counter\app\app.iml" filepath="C:\Users\Qwert\AndroidStudioProjects\Calorie_Counter\app\app.iml" />
     </modules>
   </component>
 </project>
