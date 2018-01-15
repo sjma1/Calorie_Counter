@@ -1,4 +1,4 @@
-
+package com.example.jun.calorie_counter;
 /**
  * Created by Jun on 12/27/2017.
  */
