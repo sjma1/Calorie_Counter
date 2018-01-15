@@ -1,26 +1,48 @@
 package com.example.jun.calorie_counter;
 
+
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.ImageButton;
 
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView tv;
-    Calendar current;
-    int d,m,y;
+    ImageButton button;
+    Calendar mCurrentDate;
+    int day, month, year;
 
+    private DatePickerDialog.OnDateSetListener dateSetListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv = (TextView) findViewById(R.id.textView);
+        button = (ImageButton) findViewById(R.id.changeDate);
+        mCurrentDate = Calendar.getInstance();
 
-        d = current.get(Calendar.DAY_OF_MONTH);
-        m = current.get(Calendar.MONTH);
-        y = current.get(Calendar.YEAR);
+        day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
+        month = mCurrentDate.get(Calendar.MONTH);
+        year = mCurrentDate.get(Calendar.YEAR);
+
+        month++;
+
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                DatePickerDialog datePickerDialog = new DatePickerDialog(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        //Change activity here
+                    }
+                }, year, month, day);
+                datePickerDialog.show();
+            }
+        });
     }
 }
