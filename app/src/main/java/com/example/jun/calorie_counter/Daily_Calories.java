@@ -1,4 +1,4 @@
-
+package com.example.jun.calorie_counter;
 
 /**
  * Created by Jun on 12/27/2017.
@@ -17,7 +17,7 @@ public class Daily_Calories {
     /**********************************************************
      *Get the total calories for the day by adding together
      *the calories of all consumed food
-     *@param None
+     *@param
      *@return Total Calories
      ***********************************************************/
     int Get_Total_Calories() {
@@ -30,7 +30,7 @@ public class Daily_Calories {
 
     /**********************************************************
      *Adds a food to the list of consumed food for the day
-     *@param None
+     *@param
      *@return Total Calories
      ***********************************************************/
     void Add_Food(Food f) {
@@ -39,7 +39,7 @@ public class Daily_Calories {
 
     /**********************************************************
      *Returns the arraylist containing consumed foods
-     *@param None
+     *@param
      *@return Total Calories
      ***********************************************************/
     ArrayList<Food> Get_All_Food_For_Day() {
