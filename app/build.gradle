@@ -28,4 +28,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
     // other dependencies
 
+    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+    implementation 'com.android.support:design:26.1.0'
 }
