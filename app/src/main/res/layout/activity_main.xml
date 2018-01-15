@@ -6,17 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.jun.calorie_counter.MainActivity">
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="346dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
-
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
