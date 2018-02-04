@@ -4,7 +4,7 @@ package com.example.jun.calorie_counter;
  * Created by Jun on 12/27/2017.
  */
 import java.util.ArrayList;
-
+import java.util.Date;
 /******************************************
  * This class represents the day's worth of
  * calories the user has consumed. Contains
@@ -13,6 +13,12 @@ import java.util.ArrayList;
  *****************************************/
 public class Daily_Calories {
     private ArrayList<Food> all_food_for_day;
+    private Date daily_date;
+
+
+    Daily_Calories(Date d) {
+        daily_date = d;
+    }
 
     /**********************************************************
      *Get the total calories for the day by adding together

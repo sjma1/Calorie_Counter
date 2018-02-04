@@ -39,8 +39,13 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                         //Change activity here
+
+                        //CHECK IF THERE EXISTS A DAILY CALORIES OBJECT WITH THE SELECTED DATE,
+                        //AND IF NOT THEN CREATE A NEW ONE
+
                     }
                 }, year, month, day);
+                datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis() - 1000);
                 datePickerDialog.show();
             }
         });
